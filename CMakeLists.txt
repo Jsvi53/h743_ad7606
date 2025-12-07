@@ -44,12 +44,15 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
+    # BSP驱动源文件
+    Core/Src/bsp/bsp_ad7606.c
+    Core/Src/bsp/bsp_uart.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined include paths
+    # BSP驱动头文件路径
+    Core/Inc/bsp
 )
 
 # Add project symbols (macros)

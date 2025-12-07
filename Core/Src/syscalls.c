@@ -30,14 +30,9 @@
 #include <sys/time.h>
 #include <sys/times.h>
 
-
 /* Variables */
 extern int __io_putchar(int ch) __attribute__((weak));
 extern int __io_getchar(void) __attribute__((weak));
-
-
-char *__env[1] = { 0 };
-char **environ = __env;
 
 
 /* Functions */
